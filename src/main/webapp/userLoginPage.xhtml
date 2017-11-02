@@ -1,0 +1,27 @@
+<ui:composition xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui"
+	xmlns:c="http://java.sun.com/jstl/core">
+	<h:form id="loginScreenForm">
+	<p:panel id="loginPanel" header="Login Screen" scrollable="true">
+	<p:messages id="messages" showDetail="true" autoUpdate="true"	closable="true" />
+	<h:panelGrid columns="2" cellpadding="5">
+				<p:outputLabel value="User Name ::" style="font-weight: bold;"></p:outputLabel>
+				<p:inputText value="#{userLoginBean.userName}" id="userName" label="User Name">				
+				</p:inputText> 
+	</h:panelGrid>
+		<h:commandButton value="Login" action="#{userLoginBean.userLogin}">
+	</h:commandButton>
+	</p:panel>
+	<br></br>
+	<p:outputLabel value="If you are a new user please click on below link to create" style="font-weight: bold;"></p:outputLabel>
+	<br></br>
+	<br></br>
+	<h:outputLink value="./userCreatePage.xhtml">
+	<h:outputText value="User Create page" />
+	</h:outputLink>
+	<br></br>
+	</h:form>
+</ui:composition>
