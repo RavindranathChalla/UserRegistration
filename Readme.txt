@@ -12,4 +12,4 @@ If we click on User Login Page then will get the Login Screen. If we give create
 8. Developed project with JSF frame work and Maven.
 9. Provide JUNITS as well.
 10. All the requirements are taken care.
-11. No DB required all data stored in session.
+11. No DB required. All data will be stored in session.
